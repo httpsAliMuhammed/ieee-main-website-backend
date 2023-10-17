@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "4afbf90b-2fdb-43df-a56c-01af9c826d1b",
+		"name": "ieee Testimonials.postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27127709"
+	},
+	"item": [
+		{
+			"name": "add Testimonials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "yossef",
+							"type": "text"
+						},
+						{
+							"key": "testimonial",
+							"value": "hi we are ieee ",
+							"type": "text"
+						},
+						{
+							"key": "old_position",
+							"value": "mvp",
+							"type": "text"
+						},
+						{
+							"key": "season",
+							"value": "2024",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/20120/OneDrive - Faculty of Computers and Information/Desktop/App/Wallpaper/wallpaperflare.com_wallpaper (1).jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Testimonials/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Testimonials",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Testimonials",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "yossef",
+							"type": "text"
+						},
+						{
+							"key": "testimonial",
+							"value": "hi we are ieee ",
+							"type": "text"
+						},
+						{
+							"key": "old_position",
+							"value": "mvp",
+							"type": "text"
+						},
+						{
+							"key": "season",
+							"value": "2024",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/20120/OneDrive - Faculty of Computers and Information/Desktop/App/Wallpaper/wallpaperflare.com_wallpaper (1).jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Testimonials/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Testimonials",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Testimonials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Testimonials",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Testimonials"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single Testimonials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Testimonials/84gePkzbvC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Testimonials",
+						"84gePkzbvC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Testimonial",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Testimonials/jS7PrAJlbh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Testimonials",
+						"jS7PrAJlbh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
