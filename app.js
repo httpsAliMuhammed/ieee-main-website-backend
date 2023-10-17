@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/signUp');
 var slogan = require('./routes/slogan');
 var partners = require('./routes/partners');
 
@@ -27,7 +27,7 @@ app.options("*", cors()); // Enable pre-flight request handling for all routes
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/family', usersRouter);
 app.use('/slogan', slogan);
 app.use('/partners', partners);
 
