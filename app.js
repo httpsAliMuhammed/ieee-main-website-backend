@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/signUp');
 var slogan = require('./routes/slogan');
 var partners = require('./routes/partners');
+var Testimonials = require('./routes/Testimonials');
 var gallery = require('./routes/gallery');
 
 
@@ -32,6 +33,7 @@ app.use('/', indexRouter);
 app.use('/family', usersRouter);
 app.use('/slogan', slogan);
 app.use('/partners', partners);
+app.use('/Testimonials', Testimonials);
 app.use('/gallery', gallery);
 
 // catch 404 and forward to error handler
