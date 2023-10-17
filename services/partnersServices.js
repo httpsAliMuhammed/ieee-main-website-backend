@@ -8,7 +8,7 @@ exports.addPartner = async (data) => {
 
 exports.getpartners = async () => {
   const query = util.promisify(connection.query).bind(connection);
-  return await query("SELECT * FROM partners");
+  return await query("SELECT * FROM partners ORDER BY date ASC");
 };
 
 exports.updatePartner = async (data, id) => {
