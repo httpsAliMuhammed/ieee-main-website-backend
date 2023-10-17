@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/signUp');
 var slogan = require('./routes/slogan');
 var partners = require('./routes/partners');
+var gallery = require('./routes/gallery');
+
 
 var app = express();
 
@@ -30,6 +32,7 @@ app.use('/', indexRouter);
 app.use('/family', usersRouter);
 app.use('/slogan', slogan);
 app.use('/partners', partners);
+app.use('/gallery', gallery);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
