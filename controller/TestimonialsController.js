@@ -71,9 +71,9 @@ exports.updateTestimonial = async (req, res) => {
         let result = await Testimonial.updateTestimonial(req.body, req.params.id);
     
         if (!result) {
-          return res.status(400).send("Testimonial not updated");
+          return res.status(400).send({msg:"Testimonial not updated"});
         }
-        return res.status(200).send("updated successfully");
+        return res.status(200).send({msg:"updated successfully"});
       } catch (error) {
         console.log(error);
         res.status(500).json({ errors: "internal error" });
